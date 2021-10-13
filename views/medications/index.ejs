@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ama Tu Salud</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Manage Prescriptions</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/"><button>HOME</button></a>
+          </li>
+          <li>
+            <a href="/medications/new"><button>ADD RX</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>My Prescriptions</h2>
+      <ul>
+        <% for(let i = 0; i < med.length; i++){ %>
+          <li>
+            <a href="/medications/<%=med[i]._id%>"><%= med[i].name %></a>
+          </li>
+        <% } %>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>

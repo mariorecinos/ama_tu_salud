@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ama Tu Salud</title>
+</head>
+<body>
+  <h1><%= med.name %> Details</h1>
+  <nav>
+    <a href="/medications"><button>PREV</button></a>
+    <a href="/medications/new"><button>ADD MEDICATION</button></a>
+  </nav>
+  <h3>Dose <%= med.dose %></h3>
+  <h3>Instructions:<%= med.inst %></h3>
+    <button><a href="/medications/<%=med._id %>/edit">EDIT</a></button>
+    <form method="POST" action="/medications/<%= med.id %>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE" />
+    </form>
+</body>
+</html>

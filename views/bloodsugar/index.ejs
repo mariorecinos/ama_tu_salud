@@ -1,1 +1,39 @@
-<h1>Hello Blood Sugar</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ama Tu Salud</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Manage Blood Sugar</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/"><button>HOME</button></a>
+          </li>
+          <li>
+            <a href="/bloodsugar/new"><button>ADD READING</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>My Blood Sugar Readings</h2>
+      <table>
+        <% for(let i = 0; i < sugr.length; i++){ %>
+          <tr>
+            <td><a href="/bloodsugar/<%=sugr[i]._id%>"><%= sugr[i].date %></a></td>
+            <td><%= sugr[i].level %>mg/dL</a></td>
+
+        <% } %>
+          </tr>
+        </table>
+    </main>
+  </div>
+
+</body>
+</html>

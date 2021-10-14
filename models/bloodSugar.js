@@ -4,7 +4,8 @@ const Schema = mongoose.Schema
 const sugrSchema = new Schema({
   level: Number,
   date: Date,
-}, {timestams: true}
+  tags: String,
+}, {timestamps: true}
 
 )
 

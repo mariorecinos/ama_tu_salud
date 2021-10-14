@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ama Tu Salud</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Add New Reading</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="/bloodsugar"><button>PREV PAGE</button></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="/bloodsugar" method="POST">
+        Date: <input type="datetime-local" name="date" /><br>
+        Level: <input type="number" name="level" /><br>
+        Tags: <input type="text" name="tags" /><br>
+        <input type="submit" name="" value="Add Reading" />
+      </form>
+    </main>
+  </div>
+</body>
+</html>

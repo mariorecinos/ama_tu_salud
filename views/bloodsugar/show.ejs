@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ama Tu Salud</title>
+</head>
+<body>
+  <body>
+    <h1><%= sugr.date %> Details</h1>
+    <nav>
+      <a href="/bloodsugar"><button>PREV</button></a>
+      <a href="/bloodsugar/new"><button>ADD READING</button></a>
+    </nav>
+    <h3>Level <%= sugr.level %> mg/dL</h3>
+    <h3>Tags:<%= sugr.tags %></h3>
+      <button><a href="/bloodsugar/<%=sugr._id %>/edit">EDIT</a></button>
+      <form method="POST" action="/bloodsugar/<%= sugr.id %>?_method=DELETE" method="POST">
+        <input type="submit" value="DELETE" />
+      </form>
+</body>
+</html>

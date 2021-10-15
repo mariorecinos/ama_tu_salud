@@ -39,10 +39,10 @@
       <nav>
         <ul>
           <li>
-            <a href="/"><button>HOME</button></a>
+            <a href="/"><butto class="btn btn-outline-success">HOME</button></a>
           </li>
           <li>
-            <a href="/medications/new"><button>ADD RX</button></a>
+            <a href="/medications/new"><button class ="btn btn-outline-success">ADD RX</button></a>
           </li>
         </ul>
       </nav>
@@ -52,7 +52,7 @@
       <ul>
         <% for(let i = 0; i < med.length; i++){ %>
           <li>
-            <a href="/medications/<%=med[i]._id%>"><%= med[i].name %></a>
+            <h3><a href="/medications/<%=med[i]._id%>"><%= med[i].name %></a></h3></a>
           </li>
         <% } %>
       </ul>

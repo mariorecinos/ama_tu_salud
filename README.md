@@ -25,6 +25,7 @@ innacurate logs from glucometers, staying up to date on medications and the impo
 
  ### Stretch Goals - Future Features
 
+
 - Allow the patient to get an average of their blood sugar levels by week, month, 3 months
 - Allow patients to send blood sugar and blood pressure readings to the Doctor as a CSV file that can be emailed.
 - Include list of Doctors as well as adding a portal for Doctors, Registered Dietiecians and further clinicians.

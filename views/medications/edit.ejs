@@ -20,9 +20,9 @@
     </header>
     <main>
       <form action="/medications/<%=med._id%>?_method=PUT" method="POST">
-        Name: <input type="text" name="name" /><br>
-        Dose: <input type="text" name="dose" /><br>
-        Instructions: <input type="text" name="inst" /><br>
+        Name: <input type="text" name="name" value="<%=med.name%>" required/><br>
+        Dose: <input type="text" name="dose" value="<%=med.dose%>" required/><br>
+        Instructions: <input type="text" name="inst" value="<%=med.inst%>" required/><br>
         <input type="submit" name="" value="Submit Changes" />
       </form>
     </main>
